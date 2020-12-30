@@ -6,5 +6,6 @@ public class Test {
         ICourse java = new JavaDiscountCourse(33, "java", 43d);
         JavaDiscountCourse javaDiscountCourse = (JavaDiscountCourse)java;
         System.out.println(java.getId()+java.getName()+"原价："+javaDiscountCourse.getOrininPrise()+"打折价："+java.getPrise());
+        System.out.println("test");
     }
 }
