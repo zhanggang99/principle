@@ -24,15 +24,18 @@ public class Test {
 //        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
 //        HungrySingletion newInstance = (HungrySingletion) ois.readObject();
 
-        Class objectClass = HungrySingletion.class;
-        Constructor constructor=objectClass.getDeclaredConstructor();
-        constructor.setAccessible(true);
-        HungrySingletion newInstance = (HungrySingletion) constructor.newInstance();
+//        Class objectClass = HungrySingletion.class;
+//        Constructor constructor=objectClass.getDeclaredConstructor();
+//        constructor.setAccessible(true);
+//        HungrySingletion newInstance = (HungrySingletion) constructor.newInstance();
+//
+//        HungrySingletion instance = HungrySingletion.getInstance();
+//
+//        System.out.println(instance);
+//        System.out.println(newInstance);
+//        System.out.println(instance==newInstance);
 
-        HungrySingletion instance = HungrySingletion.getInstance();
-
-        System.out.println(instance);
-        System.out.println(newInstance);
-        System.out.println(instance==newInstance);
+        EnumInstance enumInstance=EnumInstance.getInstance();
+        enumInstance.printTest();
     }
 }
